@@ -1,0 +1,11 @@
+Le main crée un objet de type ChargeurMagasin chargeur
+Le main appelle la methode chargerMagasin() ce qui fait que le chargeur :
+    Crée un objet de type Magasin magasin
+    Crée un objet de type ChargeurCD chargeCd1
+    Appelle la methode chargerCD() qui fait que chargeCd1 :
+        Crée un objet de type CD cd1
+        Appelle la methode extrairePiste
+        Appelle la methode ajouterPiste
+        Appelle la methode extrairePiste
+        Appelle la methode ajouterPiste
+    Appelle la methode ajouteCD
