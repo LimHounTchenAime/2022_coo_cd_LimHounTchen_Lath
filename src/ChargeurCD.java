@@ -1,4 +1,4 @@
-package XML;
+
 
 import java.io.File;
 import java.io.IOException;
@@ -12,8 +12,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-import donnees.CD;
-import donnees.InfoPiste;
+
 
 /**
  * 

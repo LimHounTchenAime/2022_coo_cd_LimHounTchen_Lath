@@ -1,10 +1,9 @@
-package main;
+
 
 import java.io.IOException;
 import java.util.Scanner;
 
-import donnees.Magasin;
-import XML.ChargeurMagasin;
+
 
 /**
  * permet de charger un magasin de test

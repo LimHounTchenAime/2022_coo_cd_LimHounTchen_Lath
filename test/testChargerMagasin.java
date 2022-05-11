@@ -14,4 +14,8 @@ public class testChargerMagasin {
 
     }
 
+    @Test
+    public void chargerMagasinValide(){
+        XML.ChargeurMagasin chargeurMagasin
+    }
 }
