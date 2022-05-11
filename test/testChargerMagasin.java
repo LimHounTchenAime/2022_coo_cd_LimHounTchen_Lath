@@ -7,6 +7,8 @@ public class testChargerMagasin {
 
     @Test
     public void chargerMagasin(){
+
+        ChargeurMagasin
         assertEquals();
 
 
