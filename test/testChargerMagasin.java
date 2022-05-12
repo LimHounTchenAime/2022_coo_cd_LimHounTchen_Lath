@@ -1,18 +1,20 @@
 import org.junit.jupiter.api.Test;
 
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import org.junit.jupiter.api.Assertions.assertArrayEquals;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class testChargerMagasin {
 
     @Test
-    public void chargerMagasin(){
-
-
-
+    public void chargerMagasin() throws IOException {
+        ChargeurMagasin cM = new ChargeurMagasin("musique");
+        Magasin m = cM.chargerMagasin();
+        assertEquals(12, m.getNombreCds());
 
     }
 
@@ -22,5 +24,15 @@ public class testChargerMagasin {
         ChargeurMagasin charge = new ChargeurMagasin(repertoire);
         Magasin resultat = charge.chargerMagasin();
         assertEquals("test", resultat.toString());
+    }
+
+    @Test
+    public void testTrieAlbum() throws FileNotFoundException {
+        ChargeurMagasin cM = new ChargeurMagasin("musique");
+        Magasin m = cM.chargerMagasin();
+        m.trierAlbum();
+        assertEquals("Benabar_Benabar", m.getCd(0).getNomCD());
+        assertEquals("Zebda_EssenceOrdinaire.xml", m.getCd(11).getNomCD());
+
     }
 }
