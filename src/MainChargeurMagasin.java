@@ -20,7 +20,7 @@ public class MainChargeurMagasin {
 	 */
 	public static void main(String args[]) throws IOException {
 		
-		String repertoire = "../musique/musicbrainzSimple/";
+		String repertoire = "musique";
 		ChargeurMagasin charge = new ChargeurMagasin(repertoire);
 		Magasin resultat = charge.chargerMagasin();
 		System.out.println(resultat);
