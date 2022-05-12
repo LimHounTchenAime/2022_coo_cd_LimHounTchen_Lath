@@ -69,5 +69,20 @@ public class Magasin {
 	}
 
 	// TODO  ajouter une methode de tri
+	public void trierArtiste(){
+		CD tmp=null;
+		boolean trie=false;
+		while (!trie) {
+			trie=true;
+			for (int i = 1; i < this.listeCds.size(); i++) {
+				if (this.listeCds.get(i).getNomArtiste().compareTo(this.listeCds.get(i - 1).getNomArtiste()) < 1) {
+					tmp = this.listeCds.get(i);
+					this.listeCds.set(i, this.listeCds.get(i - 1));
+					this.listeCds.set(i - 1, tmp);
+					trie=false;
+				}
+			}
 
+		}
+	}
 }

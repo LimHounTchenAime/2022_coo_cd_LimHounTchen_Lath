@@ -97,5 +97,8 @@ public class CD {
 		return (resultat);
 	}
 
-	// TODO 
+	// TODO
+	public String getNomArtiste(){
+		return this.nomArtiste;
+	}
 }
