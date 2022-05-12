@@ -3,16 +3,16 @@ import org.junit.jupiter.api.Test;
 import java.io.IOException;
 import java.util.Scanner;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class testChargerMagasin {
 
     @Test
-    public void chargerMagasin(){
-
-
-
+    public void chargerMagasin() throws  IOException{
+            ChargeurMagasin cM = new ChargeurMagasin("musique");
+            Magasin m = cM.chargerMagasin();
+            assertEquals(m.getNombreCds(), 12);
 
     }
 
