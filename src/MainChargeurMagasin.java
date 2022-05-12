@@ -22,10 +22,10 @@ public class MainChargeurMagasin {
         /*Scanner sc = new Scanner(System.in);
         sc.nextLine();
         sc.close();
-*/
-       /*resultat.trierArtiste();
+        */
 
-       System.out.println(resultat);
+       /*resultat.trierArtiste();
+        System.out.println(resultat);
 */
         resultat.trierAlbum();
 
