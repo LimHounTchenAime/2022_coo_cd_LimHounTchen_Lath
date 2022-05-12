@@ -24,12 +24,13 @@ public class MainChargeurMagasin {
         sc.close();
         */
 
-       /*resultat.trierArtiste();
+       resultat.trierArtiste();
         System.out.println(resultat);
-*/
-        resultat.trierAlbum();
 
-        System.out.println(resultat);
+
+        //resultat.trierAlbum();
+
+        //System.out.println(resultat);
         System.out.println("FIN");
     }
 

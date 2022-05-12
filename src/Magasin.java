@@ -67,20 +67,23 @@ public class Magasin {
 
     // TODO  ajouter une methode de tri
     public void trierArtiste() {
-        CD tmp = null;
-        boolean trie = false;
-        while (!trie) {
-            trie = true;
-            for (int i = 1; i < this.listeCds.size(); i++) {
-                if (this.listeCds.get(i).getNomArtiste().compareTo(this.listeCds.get(i - 1).getNomArtiste()) < 1) {
-                    tmp = this.listeCds.get(i);
-                    this.listeCds.set(i, this.listeCds.get(i - 1));
-                    this.listeCds.set(i - 1, tmp);
-                    trie = false;
+        int taille = this.listeCds.size();
+        if(this.listeCds.size()>0) {
+            CD tmp = this.listeCds.get(0);
+            for (int i = 0; i < taille; i++) {
+                for (int j = 1; j < (taille - i); j++) {
+                    if (this.listeCds.get(j - 1).getNomArtiste().compareTo(this.listeCds.get(j).getNomArtiste()) > 0) {
+                        //echanges des elements
+                        tmp = this.listeCds.get(j - 1);
+                        this.listeCds.set(j - 1, this.listeCds.get(j));
+                        this.listeCds.set(j, tmp);
+                    }
+
                 }
             }
-
         }
+
+
     }
 
     public void trierAlbum() {
