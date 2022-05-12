@@ -28,6 +28,11 @@ public class CD {
 	 * les attributs du CD
 	 */
 	private String nomArtiste;
+
+	public String getNomCD() {
+		return nomCD;
+	}
+
 	private String nomCD;
 
 	/**
