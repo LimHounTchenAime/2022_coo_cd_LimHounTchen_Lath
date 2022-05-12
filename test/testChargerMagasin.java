@@ -10,19 +10,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class testChargerMagasin {
 
     @Test
-    public void chargerMagasin() throws IOException {
+    public void chargerMagasinValide() throws IOException {
         ChargeurMagasin cM = new ChargeurMagasin("musique");
         Magasin m = cM.chargerMagasin();
         assertEquals(12, m.getNombreCds());
 
-    }
-
-    @Test
-    public void chargerMagasinValide() throws IOException {
-        String repertoire = "musique/Benabar_RisquesMetier.xml";
-        ChargeurMagasin charge = new ChargeurMagasin(repertoire);
-        Magasin resultat = charge.chargerMagasin();
-        assertEquals("test", resultat.toString());
     }
 
     @Test

@@ -102,4 +102,8 @@ public class Magasin {
 		this.listeCds = l;
 
 	}
+
+	public ArrayList<CD> getCDs(){
+		return this.listeCds;
+	}
 }
