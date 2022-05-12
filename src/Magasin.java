@@ -85,4 +85,21 @@ public class Magasin {
 
 		}
 	}
+
+	public void trierAlbum() {
+		ArrayList<CD> l = new ArrayList<CD>();
+		String S = this.getCd(0).getNomCD();
+		CD minCD = null;
+		for (int i = 0; i < this.listeCds.size(); i++) {
+			for (int k = 0; k < this.listeCds.size(); k++) {
+				if (S.compareTo(this.listeCds.get(k).getNomCD()) > 0) {
+					minCD = this.listeCds.get(k);
+				}
+			}
+			l.add(minCD);
+			this.listeCds.remove(minCD);
+		}
+		this.listeCds = l;
+
+	}
 }

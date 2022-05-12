@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-import org.junit.jupiter.api.Assertions.assertArrayEquals;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -31,8 +30,8 @@ public class testChargerMagasin {
         ChargeurMagasin cM = new ChargeurMagasin("musique");
         Magasin m = cM.chargerMagasin();
         m.trierAlbum();
-        assertEquals("Benabar_Benabar", m.getCd(0).getNomCD());
-        assertEquals("Zebda_EssenceOrdinaire.xml", m.getCd(11).getNomCD());
+        assertEquals("Bénabar", m.getCd(0).getNomCD());
+        assertEquals("Zebda", m.getCd(11).getNomCD());
 
     }
 }
