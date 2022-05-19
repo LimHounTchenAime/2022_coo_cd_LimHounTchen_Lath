@@ -78,12 +78,9 @@ public class Magasin {
                         this.listeCds.set(j - 1, this.listeCds.get(j));
                         this.listeCds.set(j, tmp);
                     }
-
                 }
             }
         }
-
-
     }
 
     public void trierAlbum() {
@@ -98,7 +95,23 @@ public class Magasin {
                         this.listeCds.set(j - 1, this.listeCds.get(j));
                         this.listeCds.set(j, tmp);
                     }
+                }
+            }
+        }
+    }
 
+    public void trier(ComparateurCd comparateurCd){
+        int taille = this.listeCds.size();
+        if(this.listeCds.size()>0) {
+            CD tmp = this.listeCds.get(0);
+            for (int i = 0; i < taille; i++) {
+                for (int j = 1; j < (taille - i); j++) {
+                    if (!comparateurCd.etreAvant(this.listeCds.get(j-1), this.listeCds.get(j))) {
+                        //echanges des elements
+                        tmp = this.listeCds.get(j - 1);
+                        this.listeCds.set(j - 1, this.listeCds.get(j));
+                        this.listeCds.set(j, tmp);
+                    }
                 }
             }
         }

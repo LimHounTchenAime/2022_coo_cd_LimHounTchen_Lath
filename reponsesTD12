@@ -1,2 +1,9 @@
 Q3)
     S'il fallait rajouter une méthode de tri pour par exemple trier les CD par nom de magasin ou autre, il faudrait faire un copier-coller des autres méthodes de tri et ce n'est pas pratique sur le long terme
+
+Q4)
+    On a utilisé un copier-coller pour les méthodes trierArtiste et trierAlbum, la partie de code copiée est la méthode de tri par bulle. Si un morceau de code est buggé, alors il faudrait modifier toutes les méthodes de tri.
+Q5)
+    Le code commun des méthodes de tri correspondent à la méthode de tri par bulle. La partie de code qui est différente est le nom comparé par la méthode de tri (nom d'un album ou d'un artiste) que j'appellerais "élément de tri".
+Q6)
+    S'il fallait rajouter un type de tri, il faudrait tout écrire de A à Z, la seule partie du code qui pourrait être conservé serait les boucles for.
